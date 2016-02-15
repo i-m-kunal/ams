@@ -1,5 +1,6 @@
 package com.tothenew.ams
 
+
 class User {
 
     transient springSecurityService
@@ -15,6 +16,8 @@ class User {
     boolean passwordExpired
 
     OAuthID oAuthID
+    static hasMany = [raisedtickets: Ticket,servedtickets:Ticket,userItems:UserItem]
+
 
     static transients = ['springSecurityService']
 
