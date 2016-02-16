@@ -1,6 +1,5 @@
 package com.tothenew.ams
 
-
 class User {
 
     transient springSecurityService
@@ -16,15 +15,17 @@ class User {
     boolean passwordExpired
 
     OAuthID oAuthID
-    static hasMany = [raisedtickets: Ticket,servedtickets:Ticket,userItems:UserItem]
-
+    static hasMany = [raisedtickets: Ticket, servedTickets: Ticket, userItems: UserItem]
 
     static transients = ['springSecurityService']
 
+    static mappedBy = [raisedtickets: 'raisedBy', servedTickets: 'servedBy']
     static constraints = {
         photo url: true, nullable: true
         password blank: false
         oAuthID nullable: true
+
+
     }
 
     static mapping = {

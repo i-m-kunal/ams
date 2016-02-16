@@ -13,7 +13,7 @@
 
 </head>
 
-<body ng-app="pmsApp">
+<body ng-app="amsApp">
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade

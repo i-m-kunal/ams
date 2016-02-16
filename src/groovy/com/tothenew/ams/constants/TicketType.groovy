@@ -1,11 +1,16 @@
 package com.tothenew.ams.constants
 
-/**
- * Created by umesh on 15/2/16.
- */
-class TicketType {
-    public static String ISSUE_REQUEST="ISSUE_REQUEST"
-    public static String CHANGE_REQUEST="CHANGE_REQUEST"
-    public static String RETURN_REQUEST="RETURN_REQUEST"
-    public static String OTHER_REQUEST="OTHER_REQUEST"
+public enum TicketType {
+    ISSUE_REQUEST("ISSUE_REQUEST"),
+    CHANGE_REQUEST("CHANGE_REQUEST"),
+    RETURN_REQUEST("RETURN_REQUEST"),
+    OTHER_REQUEST("OTHER_REQUEST")
+
+    String name
+
+    TicketType(String s) {
+        this.name = s
+    }
+    public String toString()
+    { return this.name }
 }

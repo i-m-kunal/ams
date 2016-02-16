@@ -9,7 +9,7 @@ class UserItem {
     User providerAdmin
     User recieverAdmin
 
-
+    Item item
 
     static constraints = {
     }

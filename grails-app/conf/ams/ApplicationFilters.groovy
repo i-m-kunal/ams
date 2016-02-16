@@ -3,7 +3,7 @@ package ams
 class ApplicationFilters {
 
     def filters = {
-        all(controller:'*', action:'*') {
+        all(controller: '*', action: '*') {
             before = {
                 println(">>>>>>>>>>>>>>>>>>>>>$params")
             }

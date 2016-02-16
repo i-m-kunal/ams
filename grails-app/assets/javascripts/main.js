@@ -1,4 +1,4 @@
-angular.module('pmsApp', ['ui.router'])
+angular.module('amsApp', ['ui.router'])
 
     .config(function ($stateProvider, $urlRouterProvider) {
 

@@ -19,7 +19,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a ui-sref="home">Home</a></li>
                     <li><a ui-sref="practice">Practice</a></li>
-
                     <li><a href="#/about">About</a>
                     </li>
                     <li><a href="#/contact">Contact</a>

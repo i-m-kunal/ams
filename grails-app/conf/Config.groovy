@@ -142,7 +142,7 @@ grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/dashboard'
 grails.plugin.springsecurity.failureHandler.defaultTargetUrl = '/dashboard/failure'
 grails.plugin.springsecurity.roleHierarchy = '''
-  ROLE_ADMIN > ROLE_TRAINEE
+  ROLE_ADMIN > ROLE_USER
 '''
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.tothenew.ams.User'
@@ -160,7 +160,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         '/**/images/**'          : ['permitAll'],
         '/**/favicon.ico'        : ['permitAll'],
         '/login/*'               : ['permitAll'],
-        '/console/*'               : ['permitAll']
+        '/console/**'            : ['ROLE_ADMIN'],
+        '/dbconsole/**'          : ['permitAll']
 
 ]
 

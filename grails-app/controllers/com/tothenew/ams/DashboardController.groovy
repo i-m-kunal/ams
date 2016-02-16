@@ -5,11 +5,11 @@ import grails.plugin.springsecurity.SpringSecurityService
 
 class DashboardController {
     SpringSecurityService springSecurityService
-    @Secured(['ROLE_ADMIN'])
+    @Secured(['ROLE_USER'])
     def index() {
 
         User u=User.get(springSecurityService.principal.id)
-        render "Successfully Login"+u
+
     }
 
     @Secured(['permitAll'])
