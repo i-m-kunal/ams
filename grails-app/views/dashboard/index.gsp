@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>AMS | Dashboard</title>
+    <link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-    <meta name="layout" content="amsLayout">
-    <title>Dashboard</title>
-
+    <asset:stylesheet href="pms.css"/>
+    <asset:javascript src="application.js"/>
 
 </head>
 
-<body>
-<div class="closeSidebar">
-    <section class="content-header">
-        <h1>
-            Dashboard
-            <small>Schedule</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li ng-show="isAdmin"><a href="#" ng-click="goToHome()"><i class="fa fa-user"></i> Admin</a></li>
-            <li><a href="#" ng-click="goToDashboard()"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        </ol>
+<body ng-app="amsApp">
 
-    </section>
-    <section class="content">
-        <div ui-view="dash"></div>
-        <div ui-view class="row"></div>
-    </section>
-</div>
+<div ng-include src="'ams/header.html'"></div>
 
-<script>
-    $(document).on("click", ".openSidebar", function () {
-        $(".control-sidebar").addClass("control-sidebar-open")
-    });
-</script>
+<div ui-view=""></div>
+
+<div ng-include src="'ams/footer.html'"></div>
+
 </body>
 </html>

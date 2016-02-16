@@ -1,4 +1,3 @@
-<%@ page import="com.tothenew.ams.User" %>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -12,31 +11,7 @@
             <a class="navbar-brand" href="#/">Asset Management System</a>
         </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <sec:ifLoggedIn>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a ui-sref="home">Home</a></li>
-                    <li><a ui-sref="practice">Practice</a></li>
-                    <li><a href="#/about">About</a>
-                    </li>
-                    <li><a href="#/contact">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#/blog">Profile</a>
-                            </li>
-                            <li><g:link controller="logout">Signout</g:link>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </sec:ifLoggedIn>
     <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->

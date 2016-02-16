@@ -6,9 +6,10 @@ angular.module('amsApp', ['ui.router'])
 
         $stateProvider
 
+
             .state('home', {
                 url: '/home',
-                templateUrl: 'partials/home.html'
+                templateUrl: 'ams/home.html'
             })
 
 

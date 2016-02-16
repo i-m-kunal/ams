@@ -1,4 +1,4 @@
-angular.module('pmsApp')
+angular.module('amsApp')
 
     .controller('practiceListCtrl', function ($scope, $http) {
 

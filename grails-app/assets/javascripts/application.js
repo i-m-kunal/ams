@@ -9,10 +9,9 @@
 //= require angular/angular.js
 //= require angular/angular-resource.js
 //= require angular/angular-route.js
-//= require angular/bootstrap/bootstrap.min.js
+//= require bootstrap/bootstrap.min.js
 //= require angular/angular-ui-router.min.js
 //= require main.js
-//= require controller/practiceListCtrl.js
 //= require_self
 
 

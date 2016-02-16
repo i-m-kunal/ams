@@ -5,7 +5,6 @@ dataSource {
 //    username = "sa"
 //    password = ""
 
-
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
     username = "root"
