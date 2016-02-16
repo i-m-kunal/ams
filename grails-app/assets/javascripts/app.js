@@ -9,13 +9,23 @@ angular.module('amsApp', ['ui.router'])
 
             .state('home', {
                 url: '/home',
-                templateUrl: 'ams/home.html'
+                templateUrl: 'ams/ticket/home.html'
             })
 
+            .state('ticket', {
 
+                url: 'ticket',
+                templateUrl: 'ams/ticket/home.html'
+            })
+
+            .state('ticket.list', {
+                url: '/list',
+                templateUrl: 'ams/ticket/list.html'
+
+            })
             .state('practice', {
                 url: 'practice',
-                templateUrl: 'pms/practice/list.html',
+                templateUrl: 'pms/practice/home.html',
                 controller: 'practiceListCtrl'
 
             })

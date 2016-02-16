@@ -11,7 +11,7 @@
 //= require angular/angular-route.js
 //= require bootstrap/bootstrap.min.js
 //= require angular/angular-ui-router.min.js
-//= require main.js
+//= require app.js
 //= require_self
 
 
