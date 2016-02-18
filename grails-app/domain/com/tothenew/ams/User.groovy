@@ -51,7 +51,7 @@ class User {
         password = springSecurityService?.passwordEncoder ? springSecurityService.encodePassword(password) : password
     }
 
-    String getUsername() {
+    String getUserName() {
         [firstName, lastName].findAll { it }.join(" ")
     }
 

@@ -11,7 +11,7 @@
 
 </head>
 
-<body ng-app="amsApp">
+<body ng-app="amsApp" ng-controller="homeCtrl">
 
 <div ng-include src="'ams/header.html'"></div>
 
